@@ -12,13 +12,13 @@ else
 fi
 
 python -u DeepHandwriting_ck.py \
-  --train_files data/iam/iam-train-lower.csv \
-  --dev_files data/iam/iam-train-lower.csv \
-  --test_files data/iam/iam-train-lower.csv \
+  --train_files data/iam/iam-lower-train.csv \
+  --dev_files data/iam/iam-lower-train.csv \
+  --test_files data/iam/iam-lower-train.csv \
   --train_batch_size 8 \
   --dev_batch_size 8 \
   --test_batch_size 8 \
   --n_hidden 494 \
-  --epoch 1 \
+  --epoch 50 \
   --checkpoint_dir "$checkpoint_dir" \
   "$@"
