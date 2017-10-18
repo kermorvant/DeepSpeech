@@ -12,9 +12,9 @@ else
 fi
 
 python -u DeepHandwriting_ck.py \
-  --train_files data/iam/iam-lower-train.csv \
-  --dev_files data/iam/iam-lower-train.csv \
-  --test_files data/iam/iam-lower-train.csv \
+  --train_files data/iam/iam-lower-train400.csv \
+  --dev_files data/iam/iam-lower-train400.csv \
+  --test_files data/iam/iam-lower-train400.csv \
   --train_batch_size 8 \
   --dev_batch_size 8 \
   --test_batch_size 8 \
